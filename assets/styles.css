@@ -1,0 +1,119 @@
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fafafa;
+  /* background: #252934; */
+  font-family: 'Ubuntu';
+}
+.josefin {
+  font-family: 'Josefin Sans';
+}
+.max {
+  max-width: 700px;
+}
+.corners {
+  border-radius: 5rem;
+}
+
+/* NAVBAR CSS */
+.toggle-btn {
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 2px;
+  font-size: 1.25rem;
+  outline-color: none;
+  border: none;
+  background-color: transparent;
+}
+.navbarMenu {
+  z-index: 7;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.menuBg {
+  min-height: 90vh;
+  background: linear-gradient(to bottom, rgba(45, 45, 45, 0.8) 0%, rgba(45, 45, 45, 0.8) 0%), url('/images/99465136_p0.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: overlay-slide-out 1s forwards;
+  animation-timing-function: linear;
+}
+@keyframes overlay-slide-out {
+  from {
+    width: 150px;
+  }
+  to {
+    width: 90vw;
+  }
+}
+
+.item-hover {
+  color: #fff;
+}
+.item-hover:focus {
+  color: lightblue;
+}
+.item-hover:hover {
+  color: lightblue;
+  transition: color 200ms;
+}
+
+/* OPENING CSS */
+.opening {
+  min-height: 110vh;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(65, 70, 90, 0.8) 0%, rgba(65, 70, 90, 0.8) 0%), url('/images/stew.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 94%, 20% 100%, 0 96%);
+}
+.title {
+  font-size: 6rem;
+}
+.subtitle {
+  font-size: 1.5rem;
+}
+.divider {
+  min-height: 0.3rem;
+  max-width: 3.25rem;
+  opacity: 1;
+  background-color: #fff;
+}
+
+/* HTML SECTION CSS */
+.first {
+  margin: -10vh auto auto auto;
+  padding-top: 10vh;
+  z-index: -1;
+  /* background-color: #252934; */
+}
+
+/* INPUT CSS */
+.inputCss {
+  width: 100%;
+  display: block;
+  
+  color: #fff;
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+.inputCss:focus {
+  border-bottom: 2px solid lightblue;
+  outline: none;
+}
+
+/* RESPONSIVE CSS */
+@media (max-width: 768px) {
+  .corners {
+    border-radius: 0rem;
+  }
+}
