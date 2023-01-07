@@ -90,12 +90,29 @@ body {
   background-color: #fff;
 }
 
-/* HTML SECTION CSS */
+/* Something SECTION */
 .first {
   margin: -10vh auto auto auto;
   padding-top: 10vh;
   z-index: -1;
   /* background-color: #252934; */
+}
+
+/*  */
+.hover {
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.75);
+  transition: box-shadow 150ms;
+}
+.hover:hover {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.75);
+}
+.circle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
 }
 
 /* INPUT CSS */
@@ -117,5 +134,17 @@ body {
 @media (max-width: 768px) {
   .corners {
     border-radius: 0rem;
+  }
+  
+  .menuBg {
+    height: 100vh;
+  }
+  @keyframes overlay-slide-out {
+    from {
+      width: 150px;
+    }
+    to {
+      width: 100vw;
+    }
   }
 }
